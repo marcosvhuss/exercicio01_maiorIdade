@@ -1,6 +1,7 @@
 let nome = prompt('Digite o seu nome:');
 let idade;
 let inputIdade;
+let mensagemPersonalizada = 'Você é o personagem do filme Matrix!'
 
 // Continua solicitando até que uma idade válida seja fornecida
 do {
@@ -14,5 +15,27 @@ do {
 
 // Verifica se o usuário é maior ou menor de idade
 let maiorMenor = (idade >= 18) ? 'maior' : 'menor';
-
 document.write(`Olá ${nome}, você é ${maiorMenor} de idade!`);
+
+// Condição especial para "Thomas Anderson"
+/*if (nome === "Thomas Anderson" && maiorMenor === 'maior') {
+    document.write(`Olá ${nome}, você é MAIOR de idade. Você é personagem do filme The Matrix!`);
+} else {
+    document.write(`Olá ${nome}, você é ${maiorMenor} de idade!`);
+}
+*/
+
+switch (nome) {
+    case 'Thomas Anderson':
+        document.write(mensagemPersonalizada)
+        break
+    case 'thomas anderson':
+        document.write(mensagemPersonalizada)
+        break
+    case 'THOMAS ANDERSON':
+        document.write(mensagemPersonalizada)
+        break
+    case 'Thomas anderson':
+        document.write(mensagemPersonalizada)
+        break
+}
