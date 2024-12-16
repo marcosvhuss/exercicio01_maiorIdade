@@ -9,6 +9,7 @@ Destaques:
 - Utilização de um loop `do...while` para validar a entrada de dados.
 - Verificação dinâmica com `isNaN` para evitar entradas inválidas.
 - Mensagem personalizada ao final, informando se o usuário é maior ou menor de idade.
+- Utilizando `switch` para o reconhecimento do nome "Thomas Anderson" e trazer uma mensagem personalizada para o prrograma reconhece-lo como um personagem do filme Matrix.
 
 Ideal para prática de:
 1. Manipulação de entrada do usuário com `prompt`.
